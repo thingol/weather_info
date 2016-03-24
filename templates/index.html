@@ -1,0 +1,55 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>simple c'n'c</title>
+  </head>
+
+  <meta name='viewport' content='width=device-width' />
+    
+  <body>
+
+    <table cols=5 width="790px">
+
+      <tbody>
+      <tr>
+        <td width="300px">
+          <iframe src="/radio/" frameborder="0" height="200px" width="300px"></iframe>
+        </td>
+        
+        <td width="340px">
+          Diverse viktig
+        </td>
+
+        <td bgcolor="{% if events.papir %}
+                       blue
+                     {% else %}
+                       white
+                     {% endif %}" width="50px"></td>
+        <td bgcolor="{% if events.gul_sekk %}
+                       yellow
+                     {% else %}
+                       white
+                     {% endif %}" width="50px"></td>
+        <td bgcolor="{% if events.rest %}
+                       grey
+                     {% else %}
+                       white
+                     {% endif %}" width="50px"></td>
+
+      </tr>
+      
+      <tr>
+        <td colspan=5>
+          <img src="http://www.yr.no/sted/Tyskland/Th%C3%BCringen/Rudolstadt/meteogram.png"
+            height="253px" />
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>

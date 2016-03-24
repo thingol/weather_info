@@ -1,0 +1,10 @@
+[uwsgi]
+chdir = /path/to/app
+module = wsgi
+callable = app
+
+master = true
+processes = 2
+
+chmod-socket = 660
+vacuum = true
